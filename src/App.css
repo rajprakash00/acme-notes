@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'GT Haptik Medium Rotalic';
+  src: url('./assets/fonts/GTHaptik-MediumRotalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('./assets/fonts/GT\ Haptik\ Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ctaSection {
+  background: #fefbfa url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwNiIgaGVpZ2h0PSI1MTciIHZpZXdCb3g9IjAgMCAxNzA2IDUxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzE4NDNfMTQ2NzgiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNzA2IiBoZWlnaHQ9IjUxNyI+CjxyZWN0IHdpZHRoPSIxNzA2IiBoZWlnaHQ9IjUxNyIgZmlsbD0iI0Q5RDlEOSIvPgo8L21hc2s+CjxnIG1hc2s9InVybCgjbWFzazBfMTg0M18xNDY3OCkiPgo8cmVjdCB4PSIxMTI1IiB5PSI0NjguMjQ1IiB3aWR0aD0iMzUwLjQzMiIgaGVpZ2h0PSIzNTAuNDMyIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIuOTAxOCAxMTI1IDQ2OC4yNDUpIiBmaWxsPSIjRkRFQ0U1Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDkxLjU4NCAxMzYuMTI0QzQ5My4xMTkgMTM3LjM5NyA0OTQuNjQxIDEzOC42OTUgNDk2LjE1MSAxNDAuMDE5QzQ5Ny42NiAxNDEuMzQyIDQ5OS4xNDUgMTQyLjY4MiA1MDAuNjA4IDE0NC4wMzhMNDkxLjU4NCAxMzYuMTI0Wk0xODguMjUgMTY5LjAzNUMxMTkuMjM5IDI1Ny4yNTkgMTMwLjQwMiAzODUuMDg4IDIxNS42NjUgNDU5Ljg2QzMwMC45MjcgNTM0LjYzMSA0MjkuMTIgNTI5LjAxIDUwNy41OCA0NDkuMDczTDQyOS4yNDQgMzgwLjM3NkMzODguNjk3IDQxNy4xMDkgMzI2LjE1NSA0MTguMzk0IDI4NC4wMjcgMzgxLjQ1QzI0MS45IDM0NC41MDcgMjM1LjAwOSAyODIuMzMyIDI2Ni4xMzQgMjM3LjMzNkwxODguMjUgMTY5LjAzNVoiIGZpbGw9IiNGRkVCQkQiLz4KPGNpcmNsZSBjeD0iMTUwNS41IiBjeT0iMTQ3LjUiIHI9IjEzOS41IiBmaWxsPSIjRjdEOEYzIi8+CjwvZz4KPC9zdmc+Cg==) no-repeat center bottom/contain;
 }

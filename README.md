@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# 📜 Acme Notes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Embark on a note-taking journey like never before! At Acme Note, we've transformed the art of note-making into a seamless and empowering experience. Say goodbye to scattered thoughts and hello to a world of organized brilliance.
 
-In the project directory, you can run:
+## Framework and Major Packages
+- React
+- Tailwind CSS
+- Typescript
 
-### `npm start`
+## Page Load Time Measurement
+For all the page optimisation analysis, I have used Google's Lighthouse tool and Page Speed Insights to analysze the page load time, along with how well it performs as per web standards
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Lighthouse Report:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Optimizations for Performance
+- **Image formats**: Used avif and webp formats for more memory images and to decrease loading time since avif format uses low-fidelity compression and saving bandwidth.
+- **Lazy loading**: Loading all images upon page rendered should be avoided and it gets the LCP score high. Also we shouln't lazy load all LCP images(hero images,etc.) since browser may defer the LCP image in favour of other resources.
+- **Layout shift optimisation**: Faced a layout shift above 0.1 and most common causes are image without dimesions,web fonts,etc. In my case it was happening due to image dimesions mostly so fixed some those according to properly sized images.
+- **Improve a11y**: Was facing a low accessibilty score and fixed with adding some aria-labels and color contrast issues. Due to text in foreground and background color contrast not being above 3:1(larger text) and 4:5:1(smaller text)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
